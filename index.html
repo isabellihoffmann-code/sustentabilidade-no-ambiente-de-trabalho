@@ -1,1 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treinamento de Sustentabilidade</title>
 
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background: #f2f7f2;
+        color: #333;
+    }
+
+    header{
+        background: #2E7D32;
+        color: white;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .container{
+        width: 85%;
+        max-width: 1000px;
+        margin: 30px auto;
+    }
+
+    .card{
+        background: white;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2{
+        color: #2E7D32;
+        margin-bottom: 15px;
+    }
+
+    p{
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+
+    .lixeiras{
+        display:flex;
+        flex-wrap:wrap;
+        gap:15px;
+        justify-content:center;
+        margin-top:20px;
+    }
+
+    .lixeira{
+        width:150px;
+        padding:20px;
+        color:white;
+        text-align:center;
+        border-radius:10px;
+        font-weight:bold;
+    }
+
+    .azul{background:#2196F3;}
+    .vermelho{background:#F44336;}
+    .verde{background:#4CAF50;}
+    .amarelo{background:#FFC107; color:black;}
+    .marrom{background:#795548;}
+
+    .quiz{
+        margin-top:20px;
+    }
+
+    .pergunta{
+        margin-bottom:25px;
+    }
+
+    button{
+        background:#2E7D32;
+        color:white;
+        border:none;
+        padding:12px 25px;
+        border-radius:8px;
+        font-size:16px;
+        cursor:pointer;
+    }
+
+    button:hover{
+        background:#1B5E20;
+    }
+
+    #resultado{
+        margin-top:20px;
+        font-size:20px;
+        font-weight:bold;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Treinamento de Sustentabilidade</h1>
+    <p>Separação de lixo e sustentabilidade no ambiente de trabalho</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>🌱 O que é Sustentabilidade?</h2>
+
+        <p>
+            Sustentabilidade é a capacidade de utilizar os recursos naturais e socioeconômicos do presente para suprir nossas necessidades sem comprometer a qualidade de vida das próximas gerações.
+        </p>
+
+        <p>
+            Ela é baseada em três pilares fundamentais:
+        </p>
+
+        <ul>
+            <li><b>Ambiental:</b> preservação dos recursos naturais.</li>
+            <li><b>Social:</b> bem-estar e qualidade de vida das pessoas.</li>
+            <li><b>Econômico:</b> crescimento econômico de forma responsável.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🏢 Sustentabilidade no Ambiente de Trabalho</h2>
+
+        <p>
+            Sustentabilidade no ambiente de trabalho é o conjunto de práticas que utilizam os recursos de forma consciente e responsável, reduzindo desperdícios e minimizando impactos ambientais sem prejudicar a produtividade da empresa.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>⚠ Problemas Comuns nas Empresas</h2>
+
+        <ul>
+            <li>💡 Luzes ligadas sem necessidade.</li>
+            <li>💻 Equipamentos ligados sem utilização.</li>
+            <li>📄 Uso excessivo de papel.</li>
+            <li>🚰 Desperdício de água.</li>
+            <li>🥤 Uso excessivo de materiais descartáveis.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>✅ Boas Práticas Sustentáveis</h2>
+
+        <ul>
+            <li>Separar corretamente os resíduos.</li>
+            <li>Economizar água e energia elétrica.</li>
+            <li>Reduzir impressões desnecessárias.</li>
+            <li>Reutilizar materiais sempre que possível.</li>
+            <li>Conscientizar os colaboradores.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🗑 Separação Correta dos Resíduos</h2>
+
+        <div class="lixeiras">
+            <div class="lixeira azul">PAPEL<br>📰📄</div>
+            <div class="lixeira vermelho">PLÁSTICO<br>🥤🧴</div>
+            <div class="lixeira verde">VIDRO<br>🍾</div>
+            <div class="lixeira amarelo">METAL<br>🥫</div>
+            <div class="lixeira marrom">ORGÂNICO<br>🍎</div>
+        </div>
+    </div>
+
+    <div class="card quiz">
+        <h2>📝 Quiz Final</h2>
+
+        <div class="pergunta">
+            <p><b>1. Quais são os três pilares da sustentabilidade?</b></p>
+            <input type="radio" name="q1" value="1"> Ambiental, Social e Econômico<br>
+            <input type="radio" name="q1" value="0"> Ambiental, Tecnológico e Financeiro<br>
+            <input type="radio" name="q1" value="0"> Econômico, Industrial e Ambiental
+        </div>
+
+        <div class="pergunta">
+            <p><b>2. Deixar luzes e equipamentos ligados sem necessidade é:</b></p>
+            <input type="radio" name="q2" value="0"> Uma prática sustentável<br>
+            <input type="radio" name="q2" value="1"> Um desperdício de recursos<br>
+        </div>
+
+        <div class="pergunta">
+            <p><b>3. Em qual lixeira deve ser descartado o papel?</b></p>
+            <input type="radio" name="q3" value="1"> Azul<br>
+            <input type="radio" name="q3" value="0"> Vermelha<br>
+            <input type="radio" name="q3" value="0"> Verde<br>
+        </div>
+
+        <div class="pergunta">
+            <p><b>4. Qual destas é uma prática sustentável?</b></p>
+            <input type="radio" name="q4" value="0"> Imprimir todos os documentos sem necessidade<br>
+            <input type="radio" name="q4" value="1"> Reutilizar materiais quando possível<br>
+            <input type="radio" name="q4" value="0"> Desperdiçar água
+        </div>
+
+        <div class="pergunta">
+            <p><b>5. O objetivo da sustentabilidade é:</b></p>
+            <input type="radio" name="q5" value="0"> Utilizar todos os recursos disponíveis rapidamente<br>
+            <input type="radio" name="q5" value="1"> Atender às necessidades atuais sem comprometer as futuras gerações<br>
+        </div>
+
+        <button onclick="corrigirQuiz()">Finalizar Treinamento</button>
+
+        <div id="resultado"></div>
+    </div>
+
+</div>
+
+<script>
+
+function corrigirQuiz(){
+
+    let pontos = 0;
+
+    for(let i = 1; i <= 5; i++){
+        let resposta = document.querySelector('input[name="q'+i+'"]:checked');
+
+        if(resposta){
+            pontos += Number(resposta.value);
+        }
+    }
+
+    let resultado = document.getElementById("resultado");
+
+    resultado.innerHTML =
+    `Você acertou ${pontos} de 5 questões.<br><br>`;
+
+    if(pontos == 5){
+        resultado.innerHTML +=
+        "🏆 Excelente! Você concluiu o treinamento com aproveitamento máximo.";
+    }
+    else if(pontos >= 3){
+        resultado.innerHTML +=
+        "✅ Bom trabalho! Você compreendeu os conceitos básicos de sustentabilidade.";
+    }
+    else{
+        resultado.innerHTML +=
+        "📚 Revise o conteúdo e tente novamente para melhorar seu desempenho.";
+    }
+
+}
+
+</script>
+
+</body>
+</html>
